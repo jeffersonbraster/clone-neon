@@ -97,3 +97,77 @@
     }
   }
 }
+
+.s-card-neon {
+  padding-top: 12.9rem;
+
+  .left-area {
+    width: 100%;
+    max-width: 27.7rem;
+
+    .ilustracao-mockup {
+      width: 100%;
+      max-width: 27.7rem;
+      position: relative;
+      margin-bottom: 12.9rem;
+
+      .circle {
+        position: absolute;
+        z-index: -1;
+        top: 8.7rem;
+        max-width: 37.7rem;
+        left: -21.4rem;
+      }
+    }
+    .text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .icon {
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 83px;
+          background: url(../imgs/points.svg) no-repeat center center;
+          top: -10.4rem;
+          left: 50%;
+          margin-left: -2.5px;
+        }
+      }
+
+      .info-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+          text-align: center;
+          margin-top: 3.6rem;
+          line-height: 150%;
+          color: $gray-600;
+          font-family: "Poppins", sans-serif;
+        }
+
+        p {
+          text-align: center;
+          line-height: 150%;
+          opacity: 0.8;
+          color: $gray-400;
+          margin-bottom: 2.6rem;
+        }
+
+        ul {
+          li {
+            &:not(:last-child) {
+              margin-bottom: 2.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
