@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -207,5 +211,81 @@
         </div>
       </div>
     </section>
+
+    <section class="s-depoimentos">
+      <div class="container">
+        <div class="top">
+          <h2>
+            <span>Prático, Fácil, Moderno</span> Você resolve tudo sem estresse
+          </h2>
+          <div class="pagination"></div>
+        </div>
+        <div class="slide-depoimentos">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-depoimento">
+                <div class="user">
+                  <strong>@oiesooujeje</strong>
+                  <img src="./imgs/icon-twiiter.svg" alt="twitter" />
+                </div>
+                <p>
+                  Valeu @banconeon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #banconeon
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-depoimento">
+                <div class="user">
+                  <strong>@oiesooujeje</strong>
+                  <img src="./imgs/icon-twiiter.svg" alt="twitter" />
+                </div>
+                <p>
+                  Valeu @banconeon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #banconeon
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-depoimento">
+                <div class="user">
+                  <strong>@oiesooujeje</strong>
+                  <img src="./imgs/icon-twiiter.svg" alt="twitter" />
+                </div>
+                <p>
+                  Valeu @banconeon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #banconeon
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-depoimento">
+                <div class="user">
+                  <strong>@oiesooujeje</strong>
+                  <img src="./imgs/icon-twiiter.svg" alt="twitter" />
+                </div>
+                <p>
+                  Valeu @banconeon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #banconeon
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".slide-depoimentos", {
+        slidesPerView: 3,
+        spaceBetween: 32,
+        pagination: {
+          el: ".s-depoimentos .top .pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
