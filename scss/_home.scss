@@ -574,7 +574,7 @@
   }
 
   @include responsive(480px) {
-    padding-top: 8.6rem;
+    padding-top: 13.9rem;
 
     &:after {
       content: "";
@@ -821,15 +821,18 @@
       &.circle {
         right: 0;
         bottom: 0;
+        z-index: 0;
       }
 
       &.mockup01 {
         left: 0;
         bottom: 4.7rem;
+        z-index: 2;
       }
       &.mockup02 {
         top: 0.3rem;
         left: 25.8rem;
+        z-index: 2;
       }
     }
   }
